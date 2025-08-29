@@ -1,0 +1,27 @@
+[package]
+name = "boost_convert"
+description = "Boost C++ library boost_convert packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_convert"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_convert"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_function_types = { version = "0.1.0", path = "../boost_function_types" }
+boost_lexical_cast = { version = "0.1.0", path = "../boost_lexical_cast" }
+boost_math = { version = "0.1.0", path = "../boost_math" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_optional = { version = "0.1.0", path = "../boost_optional" }
+boost_parameter = { version = "0.1.0", path = "../boost_parameter" }
+boost_range = { version = "0.1.0", path = "../boost_range" }
+boost_spirit = { version = "0.1.0", path = "../boost_spirit" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
